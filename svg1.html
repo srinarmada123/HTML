@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>SVG Example</title>
+	</head>
+	<body>
+		<svg width="240" height="200">
+			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+			<rect width="50" height="50" style="fill:red;stroke-width:10;stroke:green;"/>
+			<rect x="70" y="80" rx="20" ry="20" width="80" height="50" style="fill:red;stroke-width:10;stroke:green;"/>
+			<defs>
+				<linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+				</linearGradient>			
+			</defs>
+			<ellipse cx="100" cy="70" rx="100" ry="55" fill="url(#g1)" />
+			<text fill="#ffffff" font-size="25" font-family="verdana" x="10" y="86">SRI NARMADA</text>
+			</ellipse>
+		</svg>
+	</body>
+</html>

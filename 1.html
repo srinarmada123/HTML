@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>javascript sample program</title>
+		<script>
+			document.write("Welcome to JavaScript");				
+			console.log("Welcome to console.log()");
+			console.warn("It is not recommened.");
+			console.error("You cannot go further");
+			function show()
+			{
+				confirm("Are you sure you want to see the result?");
+				document.getElementById('one').innerHTML='Hi';
+				alert(document.getElementById('one').innerHTML);
+			}
+		</script>
+	</head>
+	<body>
+		<p id="one" onClick="show()">Welcome to JS</p>	
+	</body>
+</html>

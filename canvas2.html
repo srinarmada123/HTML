@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>HTML5 Line  Example</title>
+	</head>
+	<body>
+		<canvas id="canvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
+		</canvas>
+		<canvas id="canvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+		</canvas>
+		<canvas id="canvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+		</canvas>
+		<script>
+			var c=document.getElementById("canvas1");
+			var cgc=c.getContext("2d");
+			cgc.moveTo(0,0);
+			cgc.lineTo(200,100);
+			cgc.stroke();
+			cgc.beginPath();
+			cgc.arc(95,50,40,0,2*Math.PI);
+			cgc.stroke();
+			cgc.font="30px forte";
+			cgc.fillText("Welcome",10,50);		
+			cgc.strokeText("Welcome",30,80);
+
+			var c1=document.getElementById("canvas2");
+			var cgc1=c1.getContext("2d");
+			var clg=cgc1.createLinearGradient(0,0,200,0);
+			clg.addColorStop(0,"lime");
+			clg.addColorStop(1,"yellow");
+			cgc1.fillStyle=clg;
+			cgc1.fillRect(0,0,200,100);
+
+			var c2=document.getElementById("canvas3");
+			var cgc2=c2.getContext("2d");
+			var clg1=cgc2.createRadialGradient(45,30,5,100,50,70);
+			clg1.addColorStop(0,"lime");
+			clg1.addColorStop(1,"yellow");
+			cgc2.fillStyle=clg1;
+			cgc2.fillRect(0,0,200,100);
+
+		</script>
+	</body>
+</html>
